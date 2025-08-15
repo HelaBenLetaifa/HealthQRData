@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Avez-vous actuellement des douleurs dentaires?",
+    "type": "multiple-choice",
+    "options": ["Oui, sévères", "Oui, modérées", "Oui, légères", "Non"]
+  },
+  {
+    "title": "Quand avez-vous eu votre dernière visite dentaire?",
+    "type": "text"
+  },
+  {
+    "title": "Avez-vous des allergies aux médicaments?",
+    "type": "checkbox",
+    "options": ["Pénicilline", "Lidocaïne", "Latex", "Autres", "Aucune allergie connue"]
+  },
+  {
+    "title": "Prenez-vous actuellement des médicaments?",
+    "type": "multiple-choice",
+    "options": ["Oui, sur prescription", "Oui, en vente libre", "Non"]
+  },
+  {
+    "title": "Avez-vous déjà eu une intervention chirurgicale dentaire?",
+    "type": "multiple-choice",
+    "options": ["Oui", "Non", "Je ne me souviens pas"]
+  },
+  {
+    "title": "Décrivez vos préoccupations dentaires actuelles",
+    "type": "textarea"
+  },
+  {
+    "title": "À quelle fréquence vous brossez-vous les dents?",
+    "type": "multiple-choice",
+    "options": ["2 fois par jour", "1 fois par jour", "Moins d'une fois par jour", "Rarement"]
+  },
+  {
+    "title": "Utilisez-vous du fil dentaire régulièrement?",
+    "type": "multiple-choice",
+    "options": ["Quotidiennement", "Quelques fois par semaine", "Rarement", "Jamais"]
+  }
+]

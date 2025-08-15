@@ -1,0 +1,382 @@
+{
+  "Médecine Générale": [
+    {
+      "id": "gen-health-basic",
+      "name": "Évaluation Santé Générale",
+      "description": "Questionnaire complet pour évaluer l'état de santé général du patient",
+      "specialty": "Médecine Générale",
+      "complexity": "Basique",
+      "questionsCount": 12,
+      "languages": 5,
+      "usageCount": 156,
+      "lastUpdated": "2025-01-20",
+      "tags": ["consultation", "anamnèse", "suivi"],
+      "isPopular": true,
+      "previewQuestions": [
+        "Comment évaluez-vous votre état de santé général?",
+        "Avez-vous des allergies connues?",
+        "Prenez-vous actuellement des médicaments?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Comment évaluez-vous votre état de santé général?",
+          "description": "Évaluation subjective de votre état de santé actuel",
+          "required": true,
+          "options": ["Excellent", "Très bon", "Bon", "Moyen", "Mauvais"],
+          "translationKey": "questions.general_health_status"
+        },
+        {
+          "id": "q2",
+          "type": "checkbox",
+          "title": "Avez-vous des allergies connues?",
+          "description": "Sélectionnez tous les types d'allergies que vous avez",
+          "required": true,
+          "options": ["Médicaments", "Aliments", "Pollen", "Animaux", "Aucune allergie connue"],
+          "translationKey": "questions.known_allergies"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "title": "Prenez-vous actuellement des médicaments?",
+          "description": "Incluez les médicaments sur ordonnance et en vente libre",
+          "required": true,
+          "options": ["Oui, sur prescription médicale", "Oui, automédication", "Non, aucun médicament"],
+          "translationKey": "questions.current_medications"
+        },
+        {
+          "id": "q4",
+          "type": "textarea",
+          "title": "Décrivez vos symptômes actuels",
+          "description": "Donnez le plus de détails possible sur ce que vous ressentez",
+          "required": false,
+          "translationKey": "questions.current_symptoms"
+        },
+        {
+          "id": "q5",
+          "type": "slider",
+          "title": "Sur une échelle de 1 à 10, évaluez votre niveau de fatigue général",
+          "description": "1 = Pas du tout fatigué, 10 = Extrêmement fatigué",
+          "required": true,
+          "min": 1,
+          "max": 10,
+          "translationKey": "questions.fatigue_level"
+        }
+      ]
+    },
+    {
+      "id": "gen-follow-up",
+      "name": "Suivi de Consultation",
+      "description": "Formulaire de suivi post-consultation pour évaluer l'évolution du patient",
+      "specialty": "Médecine Générale",
+      "complexity": "Basique",
+      "questionsCount": 8,
+      "languages": 5,
+      "usageCount": 89,
+      "lastUpdated": "2025-01-18",
+      "tags": ["suivi", "évolution", "traitement"],
+      "isPopular": false,
+      "previewQuestions": [
+        "Comment vous sentez-vous depuis votre dernière visite?",
+        "Avez-vous suivi le traitement prescrit?",
+        "Avez-vous ressenti des effets secondaires?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Comment vous sentez-vous depuis votre dernière visite?",
+          "required": true,
+          "options": ["Beaucoup mieux", "Un peu mieux", "Pareil", "Un peu moins bien", "Beaucoup moins bien"],
+          "translationKey": "questions.feeling_since_visit"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "title": "Avez-vous suivi le traitement prescrit?",
+          "required": true,
+          "options": ["Oui, exactement comme prescrit", "Oui, mais j'ai modifié les doses", "Partiellement", "Non, je n'ai pas pu suivre le traitement"],
+          "translationKey": "questions.treatment_compliance"
+        },
+        {
+          "id": "q3",
+          "type": "checkbox",
+          "title": "Avez-vous ressenti des effets secondaires?",
+          "required": false,
+          "options": ["Nausées", "Maux de tête", "Fatigue", "Troubles digestifs", "Réactions cutanées", "Aucun effet secondaire"],
+          "translationKey": "questions.side_effects"
+        }
+      ]
+    },
+    {
+      "id": "gen-pain-assessment",
+      "name": "Évaluation de la Douleur",
+      "description": "Questionnaire spécialisé pour évaluer et localiser la douleur du patient",
+      "specialty": "Médecine Générale",
+      "complexity": "Intermédiaire",
+      "questionsCount": 15,
+      "languages": 5,
+      "usageCount": 234,
+      "lastUpdated": "2025-01-15",
+      "tags": ["douleur", "symptômes", "évaluation"],
+      "isPopular": true,
+      "previewQuestions": [
+        "Sur une échelle de 1 à 10, évaluez votre niveau de douleur",
+        "Où ressentez-vous cette douleur?",
+        "La douleur est-elle constante ou intermittente?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "slider",
+          "title": "Sur une échelle de 1 à 10, évaluez votre niveau de douleur actuel",
+          "description": "1 = Aucune douleur, 10 = Douleur insupportable",
+          "required": true,
+          "min": 1,
+          "max": 10,
+          "translationKey": "questions.pain_level_current"
+        },
+        {
+          "id": "q2",
+          "type": "checkbox",
+          "title": "Où ressentez-vous cette douleur?",
+          "description": "Sélectionnez toutes les zones concernées",
+          "required": true,
+          "options": ["Tête", "Cou", "Épaules", "Dos", "Poitrine", "Abdomen", "Bras", "Jambes"],
+          "translationKey": "questions.pain_location"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "title": "La douleur est-elle constante ou intermittente?",
+          "required": true,
+          "options": ["Constante", "Intermittente", "Variable selon l'activité"],
+          "translationKey": "questions.pain_frequency"
+        },
+        {
+          "id": "q4",
+          "type": "multiple-choice",
+          "title": "Comment décririez-vous votre douleur?",
+          "required": true,
+          "options": ["Sourde", "Aiguë", "Lancinante", "Brûlante", "Picotante"],
+          "translationKey": "questions.pain_quality"
+        }
+      ]
+    }
+  ],
+  "Cardiologie": [
+    {
+      "id": "cardio-evaluation",
+      "name": "Évaluation Cardiologique",
+      "description": "Questionnaire complet pour évaluation cardiologique pré-consultation",
+      "specialty": "Cardiologie",
+      "complexity": "Complet",
+      "questionsCount": 18,
+      "languages": 5,
+      "usageCount": 67,
+      "lastUpdated": "2025-01-19",
+      "tags": ["cardiologie", "facteurs de risque", "symptômes"],
+      "isPopular": true,
+      "previewQuestions": [
+        "Avez-vous des antécédents familiaux de maladie cardiaque?",
+        "Ressentez-vous des douleurs thoraciques?",
+        "Avez-vous des essoufflements à l'effort?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Avez-vous des antécédents familiaux de maladie cardiaque?",
+          "description": "Parents, grands-parents, frères et sœurs",
+          "required": true,
+          "options": ["Oui, proches directs", "Oui, famille élargie", "Non", "Je ne sais pas"],
+          "translationKey": "questions.cardiac_family_history"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "title": "Ressentez-vous des douleurs thoraciques?",
+          "required": true,
+          "options": ["Jamais", "Rarement", "Parfois", "Souvent", "Très fréquemment"],
+          "translationKey": "questions.chest_pain_frequency"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "title": "Avez-vous des essoufflements à l'effort?",
+          "required": true,
+          "options": ["Non", "Effort intense seulement", "Effort modéré", "Effort léger", "Au repos"],
+          "translationKey": "questions.dyspnea_effort"
+        },
+        {
+          "id": "q4",
+          "type": "checkbox",
+          "title": "Avez-vous l'un des facteurs de risque suivants?",
+          "required": true,
+          "options": ["Diabète", "Hypertension artérielle", "Cholestérol élevé", "Tabagisme", "Surpoids"],
+          "translationKey": "questions.cardiac_risk_factors"
+        }
+      ]
+    }
+  ],
+  "Pédiatrie": [
+    {
+      "id": "pediatric-development",
+      "name": "Développement de l'Enfant",
+      "description": "Évaluation du développement psychomoteur et social de l'enfant",
+      "specialty": "Pédiatrie",
+      "complexity": "Complet",
+      "questionsCount": 20,
+      "languages": 5,
+      "usageCount": 123,
+      "lastUpdated": "2025-01-17",
+      "tags": ["développement", "motricité", "social"],
+      "isPopular": true,
+      "previewQuestions": [
+        "À quel âge votre enfant a-t-il commencé à marcher?",
+        "Votre enfant parle-t-il des phrases complètes?",
+        "Comment évaluez-vous l'interaction sociale de votre enfant?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "text",
+          "title": "Âge de l'enfant",
+          "required": true,
+          "translationKey": "questions.child_age"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "title": "Votre enfant parle-t-il des phrases complètes?",
+          "required": true,
+          "options": ["Oui", "Parfois", "Non"],
+          "translationKey": "questions.speech_development"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "title": "Votre enfant a-t-il commencé à marcher?",
+          "required": true,
+          "options": ["Avant 12 mois", "12-15 mois", "15-18 mois", "Après 18 mois"],
+          "translationKey": "questions.walking_age"
+        }
+      ]
+    }
+  ],
+  "Psychiatrie": [
+    {
+      "id": "psy-evaluation",
+      "name": "Évaluation Psychiatrie",
+      "description": "Questionnaire pour évaluer l'état psychologique et émotionnel du patient",
+      "specialty": "Psychiatrie",
+      "complexity": "Intermédiaire",
+      "questionsCount": 14,
+      "languages": 5,
+      "usageCount": 98,
+      "lastUpdated": "2025-01-16",
+      "tags": ["psychologie", "émotions", "humeur"],
+      "isPopular": true,
+      "previewQuestions": [
+        "Vous sentez-vous souvent anxieux?",
+        "Avez-vous des troubles du sommeil?",
+        "Avez-vous des épisodes dépressifs?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Vous sentez-vous souvent anxieux?",
+          "required": true,
+          "options": ["Jamais", "Rarement", "Parfois", "Souvent", "Toujours"],
+          "translationKey": "questions.anxiety_level"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "title": "Avez-vous des troubles du sommeil?",
+          "required": true,
+          "options": ["Jamais", "Parfois", "Souvent", "Toujours"],
+          "translationKey": "questions.sleep_problems"
+        }
+      ]
+    }
+  ],
+  "Chirurgie": [
+    {
+      "id": "surgery-prep",
+      "name": "Préparation Chirurgicale",
+      "description": "Évaluation pré-opératoire pour interventions chirurgicales",
+      "specialty": "Chirurgie",
+      "complexity": "Avancé",
+      "questionsCount": 16,
+      "languages": 5,
+      "usageCount": 45,
+      "lastUpdated": "2025-01-12",
+      "tags": ["pré-opératoire", "chirurgie", "évaluation"],
+      "isPopular": false,
+      "previewQuestions": [
+        "Avez-vous subi une chirurgie précédente?",
+        "Prenez-vous des anticoagulants?",
+        "Avez-vous des allergies médicamenteuses?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Avez-vous subi une chirurgie précédente?",
+          "required": true,
+          "options": ["Oui", "Non"],
+          "translationKey": "questions.previous_surgery"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "title": "Prenez-vous des anticoagulants?",
+          "required": true,
+          "options": ["Oui", "Non", "Parfois"],
+          "translationKey": "questions.anticoagulant_use"
+        }
+      ]
+    }
+  ],
+  "Dermatologie": [
+    {
+      "id": "derma-skin-assessment",
+      "name": "Évaluation Dermatologique",
+      "description": "Questionnaire pour évaluer l'état de la peau et antécédents dermatologiques",
+      "specialty": "Dermatologie",
+      "complexity": "Intermédiaire",
+      "questionsCount": 10,
+      "languages": 5,
+      "usageCount": 33,
+      "lastUpdated": "2025-01-14",
+      "tags": ["peau", "dermatologie", "allergies cutanées"],
+      "isPopular": true,
+      "previewQuestions": [
+        "Avez-vous des antécédents d'eczéma?",
+        "Avez-vous des allergies cutanées?",
+        "Utilisez-vous des produits cosmétiques spécifiques?"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "title": "Avez-vous des antécédents d'eczéma?",
+          "required": true,
+          "options": ["Oui", "Non"],
+          "translationKey": "questions.eczema_history"
+        },
+        {
+          "id": "q2",
+          "type": "checkbox",
+          "title": "Avez-vous des allergies cutanées?",
+          "required": true,
+          "options": ["Pollen", "Animaux", "Produits cosmétiques", "Aliments", "Aucune"],
+          "translationKey": "questions.skin_allergies"
+        }
+      ]
+    }
+  ]
+}

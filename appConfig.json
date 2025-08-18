@@ -1,10 +1,24 @@
 {
   "defaultLanguage": "fr",
   "availableLanguages": [
-    { "code": "fr", "name": "Français", "flag": "🇫🇷", "rtl": false },
-    { "code": "en", "name": "English", "flag": "🇬🇧", "rtl": false },
-    { "code": "es", "name": "Español", "flag": "🇪🇸", "rtl": false },
-    { "code": "ar", "name": "العربية", "flag": "🇸🇦", "rtl": true }
+    { "code": "fr", 
+      "name": "Français",
+      "flag": "🇫🇷", 
+      "rtl": false 
+    },
+    { "code": "en", 
+      "name": "English", 
+      "flag": "🇬🇧",
+      "rtl": false
+    },
+    { "code": "es",
+      "name": "Español",
+      "flag": "🇪🇸",
+      "rtl": false },
+    { "code": "ar",
+      "name": "العربية", 
+      "flag": "🇸🇦", 
+      "rtl": true }
   ],
   "forms": {
     "active": ["dental-form-1"]

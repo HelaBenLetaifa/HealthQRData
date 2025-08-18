@@ -7,8 +7,7 @@
     { "code": "ar", "name": "العربية", "flag": "🇸🇦", "rtl": true }
   ],
   "forms": {
-    "active": ["dental-form-1"],
-    "definitions": ["dental-form-1"]
+    "active": ["dental-form-1"]
   },
   "localization": {
     "translationsPath": "/locales",

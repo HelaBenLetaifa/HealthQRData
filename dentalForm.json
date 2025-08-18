@@ -1,0 +1,60 @@
+{
+  "id": "dental-form-1",
+  "translationKey": "forms.dental.title",
+  "descriptionKey": "forms.dental.description",
+  "version": "1.0",
+  "isDefault": true,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
+      "required": true,
+      "options": [
+        { "key": "options.pain.severe" },
+        { "key": "options.pain.moderate" },
+        { "key": "options.pain.mild" },
+        { "key": "options.pain.none" }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "text",
+      "titleKey": "questions.dental.last_visit",
+      "required": true
+    },
+    {
+      "id": "q3",
+      "type": "checkbox",
+      "titleKey": "questions.dental.allergies",
+      "descriptionKey": "questions.dental.allergies_description",
+      "required": true,
+      "options": [
+        { "key": "options.allergies.penicillin" },
+        { "key": "options.allergies.lidocaine" },
+        { "key": "options.allergies.latex" },
+        { "key": "options.allergies.other" },
+        { "key": "options.allergies.none" }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.medications",
+      "required": true,
+      "options": [
+        { "key": "options.medications.prescription" },
+        { "key": "options.medications.over_counter" },
+        { "key": "options.medications.none" }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "textarea",
+      "titleKey": "questions.dental.concerns",
+      "descriptionKey": "questions.dental.concerns_description",
+      "required": false
+    }
+  ]
+}

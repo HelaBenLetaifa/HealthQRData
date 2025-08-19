@@ -1,0 +1,22 @@
+{
+  "clinics": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "name": "Dental Clinic"
+    },
+    {
+      "id": "2",
+      "username": "orthodontie",
+      "password": "456",
+      "name": "Orthodontie Center"
+    },
+    {
+      "id": "3",
+      "username": "esthetique",
+      "password": "789",
+      "name": "Esthétique Smile"
+    }
+  ]
+}

@@ -4,18 +4,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
+      "email": "admin@dentalclinic.com",
       "name": "Dental Clinic"
     },
     {
       "id": "2",
       "username": "orthodontie",
       "password": "456",
+      "email": "contact@orthodontiecenter.com",
       "name": "Orthodontie Center"
     },
     {
       "id": "3",
       "username": "esthetique",
       "password": "789",
+      "email": "info@esthetiquesmile.com",
       "name": "Esthétique Smile"
     }
   ]

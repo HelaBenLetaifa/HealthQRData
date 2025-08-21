@@ -2,7 +2,7 @@
   "clinics": [
     {
       "id": "1",
-      "username": "admin",
+      "username": "Mohamed",
       "password": "123",
       "email": "admin@dentalclinic.com",
       "name": "Dental Clinic"

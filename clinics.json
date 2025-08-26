@@ -1,21 +1,21 @@
 {
   "clinics": [
     {
-      "id": "1",
+      "clinicId": "1",
       "username": "Mohamed",
       "password": "123",
       "email": "admin@dentalclinic.com",
       "name": "Dental Clinic"
     },
     {
-      "id": "2",
+      "clinicId": "2",
       "username": "orthodontie",
       "password": "456",
       "email": "contact@orthodontiecenter.com",
       "name": "Orthodontie Center"
     },
     {
-      "id": "3",
+      "clinicId": "3",
       "username": "esthetique",
       "password": "789",
       "email": "info@esthetiquesmile.com",

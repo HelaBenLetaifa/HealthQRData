@@ -5,14 +5,14 @@
       "name": "Clinique Dentaire Moderne",
       "type": "Cabinet Dentaire",
       "address": {
-        "street": "15 Avenue des Dentistes", 
+        "street": "15 Avenue des Dentistes",
         "postalCode": "75008",
         "city": "Paris",
         "country": "France"
       },
       "contact": {
         "phone": "+33 1 42 56 78 90",
-        "fax": "+33 1 42 56 78 91", 
+        "fax": "+33 1 42 56 78 91",
         "email": "admin@dentalclinic.com",
         "website": "https://www.dentalclinic-moderne.fr"
       },
@@ -24,14 +24,14 @@
       "openingHours": [
         {
           "day": "Lundi",
-          "open": "08:00", 
+          "open": "08:00",
           "close": "18:00",
           "isClosed": false
         },
         {
           "day": "Mardi",
           "open": "08:00",
-          "close": "18:00", 
+          "close": "18:00",
           "isClosed": false
         },
         {
@@ -41,7 +41,7 @@
           "isClosed": false
         },
         {
-          "day": "Jeudi", 
+          "day": "Jeudi",
           "open": "08:00",
           "close": "18:00",
           "isClosed": false
@@ -55,7 +55,7 @@
         {
           "day": "Samedi",
           "open": "09:00",
-          "close": "13:00", 
+          "close": "13:00",
           "isClosed": false
         },
         {
@@ -68,22 +68,16 @@
       "staff": [
         {
           "name": "Dr. Mohamed Alami",
-          "role": "Chirurgien-Dentiste", 
+          "role": "Chirurgien-Dentiste",
           "speciality": "Implantologie"
-        },
-        {
-          "name": "Dr. Sarah Mansouri",
-          "role": "Dentiste",
-          "speciality": "Esthétique dentaire"
         }
       ],
-      "equipment": ["Scanner 3D", "Laser dentaire", "Radiographie panoramique"],
-      "languages": ["Français", "Arabe", "Anglais"]
+      "equipment": ["Scanner 3D", "Laser dentaire", "Radiographie panoramique"]
     },
     {
       "id": "2",
       "name": "Centre d'Orthodontie Avancée",
-      "type": "Centre Spécialisé", 
+      "type": "Centre Spécialisé",
       "address": {
         "street": "28 Rue de l'Orthodontie",
         "postalCode": "69003",
@@ -97,7 +91,7 @@
         "website": "https://www.orthodontie-avancee.fr"
       },
       "emergencyContact": {
-        "name": "Dr. Pierre Dubois", 
+        "name": "Dr. Pierre Dubois",
         "phone": "+33 4 78 95 12 36"
       },
       "specialties": ["Orthodontie enfant", "Orthodontie adulte", "Orthodontie invisible"],
@@ -109,7 +103,7 @@
           "isClosed": false
         },
         {
-          "day": "Mardi", 
+          "day": "Mardi",
           "open": "09:00",
           "close": "19:00",
           "isClosed": false
@@ -123,7 +117,7 @@
         {
           "day": "Jeudi",
           "open": "09:00",
-          "close": "19:00", 
+          "close": "19:00",
           "isClosed": false
         },
         {
@@ -141,7 +135,7 @@
         {
           "day": "Dimanche",
           "open": "",
-          "close": "", 
+          "close": "",
           "isClosed": true
         }
       ],
@@ -150,15 +144,9 @@
           "name": "Dr. Claire Orthodont",
           "role": "Orthodontiste",
           "speciality": "Orthodontie invisible"
-        },
-        {
-          "name": "Dr. Pierre Dubois",
-          "role": "Orthodontiste",
-          "speciality": "Orthodontie pédiatrique"
         }
       ],
-      "equipment": ["Scanner intraoral", "Aligneurs invisibles", "Appareils orthodontiques"],
-      "languages": ["Français", "Anglais", "Espagnol"]
+      "equipment": ["Scanner intraoral", "Aligneurs invisibles", "Appareils orthodontiques"]
     },
     {
       "id": "3",
@@ -166,7 +154,7 @@
       "type": "Cabinet Esthétique",
       "address": {
         "street": "42 Boulevard de la Beauté",
-        "postalCode": "13001", 
+        "postalCode": "13001",
         "city": "Marseille",
         "country": "France"
       },
@@ -191,7 +179,7 @@
         {
           "day": "Mardi",
           "open": "10:00",
-          "close": "19:00", 
+          "close": "19:00",
           "isClosed": false
         },
         {
@@ -213,7 +201,7 @@
           "isClosed": false
         },
         {
-          "day": "Samedi", 
+          "day": "Samedi",
           "open": "10:00",
           "close": "16:00",
           "isClosed": false
@@ -230,11 +218,6 @@
           "name": "Dr. Amélie Sourire",
           "role": "Dentiste Esthétique",
           "speciality": "Smile Design"
-        },
-        {
-          "name": "Dr. Marc Beauté",
-          "role": "Dentiste", 
-          "speciality": "Facettes et couronnes"
         }
       ],
       "equipment": ["Caméra intraorale", "Système de blanchiment", "CFAO dentaire"],
@@ -247,7 +230,7 @@
       "address": {
         "street": "7 Rue des Petits Sourires",
         "postalCode": "31000",
-        "city": "Toulouse", 
+        "city": "Toulouse",
         "country": "France"
       },
       "contact": {
@@ -265,7 +248,7 @@
         {
           "day": "Lundi",
           "open": "08:30",
-          "close": "17:30", 
+          "close": "17:30",
           "isClosed": false
         },
         {
@@ -288,7 +271,7 @@
         },
         {
           "day": "Vendredi",
-          "open": "08:30", 
+          "open": "08:30",
           "close": "17:30",
           "isClosed": false
         },
@@ -320,7 +303,7 @@
       "name": "Centre d'Implantologie Avancée",
       "type": "Centre Spécialisé",
       "address": {
-        "street": "33 Avenue de l'Implant", 
+        "street": "33 Avenue de l'Implant",
         "postalCode": "06000",
         "city": "Nice",
         "country": "France"
@@ -344,7 +327,7 @@
           "isClosed": false
         },
         {
-          "day": "Mardi", 
+          "day": "Mardi",
           "open": "08:00",
           "close": "18:00",
           "isClosed": false
@@ -364,7 +347,7 @@
         {
           "day": "Vendredi",
           "open": "08:00",
-          "close": "17:00", 
+          "close": "17:00",
           "isClosed": false
         },
         {
@@ -385,11 +368,6 @@
           "name": "Dr. Jean-Luc Martin",
           "role": "Implantologue",
           "speciality": "Chirurgie implantaire"
-        },
-        {
-          "name": "Dr. Marie Rousseau",
-          "role": "Prothésiste", 
-          "speciality": "Prothèses sur implants"
         }
       ],
       "equipment": ["Scanner CBCT", "Chirurgie guidée", "Implants premium"],
@@ -402,7 +380,7 @@
       "address": {
         "street": "1 Place de l'Urgence",
         "postalCode": "67000",
-        "city": "Strasbourg", 
+        "city": "Strasbourg",
         "country": "France"
       },
       "contact": {
@@ -420,7 +398,7 @@
         {
           "day": "Lundi",
           "open": "00:00",
-          "close": "23:59", 
+          "close": "23:59",
           "isClosed": false
         },
         {
@@ -443,7 +421,7 @@
         },
         {
           "day": "Vendredi",
-          "open": "00:00", 
+          "open": "00:00",
           "close": "23:59",
           "isClosed": false
         },
@@ -465,11 +443,6 @@
           "name": "Dr. Paul Urgence",
           "role": "Dentiste de garde",
           "speciality": "Urgences dentaires"
-        },
-        {
-          "name": "Dr. Anna Nuit", 
-          "role": "Dentiste de garde",
-          "speciality": "Soins nocturnes"
         }
       ],
       "equipment": ["Matériel d'urgence", "Radiographie portable", "Kit de traumatologie"],

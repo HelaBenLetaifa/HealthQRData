@@ -19,8 +19,7 @@
       "emergencyContact": {
         "name": "Dr. Sarah Mansouri",
         "phone": "+33 1 42 56 78 92"
-      },
-      "specialties": ["Dentisterie générale", "Implantologie", "Esthétique dentaire"]
+      }
     },
     {
       "id": "2",
@@ -41,8 +40,7 @@
       "emergencyContact": {
         "name": "Dr. Pierre Dubois",
         "phone": "+33 4 78 95 12 36"
-      },
-      "specialties": ["Orthodontie enfant", "Orthodontie adulte", "Orthodontie invisible"]
+      }
     },
     {
       "id": "3",
@@ -63,8 +61,7 @@
       "emergencyContact": {
         "name": "Dr. Amélie Sourire",
         "phone": "+33 4 91 15 67 91"
-      },
-      "specialties": ["Blanchiment dentaire", "Facettes", "Couronnes esthétiques", "Smile Design"]
+      }
     },
     {
       "id": "4",
@@ -85,8 +82,7 @@
       "emergencyContact": {
         "name": "Dr. Sophie Enfant",
         "phone": "+33 5 61 23 45 69"
-      },
-      "specialties": ["Dentisterie pédiatrique", "Prévention", "Orthodontie précoce"]
+      }
     },
     {
       "id": "5",
@@ -107,8 +103,7 @@
       "emergencyContact": {
         "name": "Dr. Jean-Luc Martin",
         "phone": "+33 4 93 87 65 45"
-      },
-      "specialties": ["Implantologie", "Chirurgie guidée", "All-on-4", "Greffe osseuse"]
+      }
     },
     {
       "id": "6",
@@ -129,8 +124,7 @@
       "emergencyContact": {
         "name": "Dr. Paul Urgence",
         "phone": "+33 3 88 14 25 38"
-      },
-      "specialties": ["Urgences dentaires", "Soins d'urgence", "Traumatologie dentaire"]
+      }
     }
   ]
 }

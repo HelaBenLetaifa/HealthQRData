@@ -1,0 +1,184 @@
+{
+  "clinics": [
+    {
+      "id": "1",
+      "name": "Clinique Dentaire Moderne",
+      "type": "Cabinet Dentaire",
+      "address": {
+        "street": "15 Avenue des Dentistes",
+        "postalCode": "75008",
+        "city": "Paris",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 1 42 56 78 90",
+        "fax": "+33 1 42 56 78 91",
+        "email": "admin@dentalclinic.com",
+        "website": "https://www.dentalclinic-moderne.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Sarah Mansouri",
+        "phone": "+33 1 42 56 78 92"
+      },
+      "users": [
+        {
+          "username": "Mohamed",
+          "password": "123",
+          "email": "admin@dentalclinic.com",
+          "name": "Dr. Mohamed Alami",
+          "role": "Directeur"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Centre d'Orthodontie Avancée",
+      "type": "Centre Spécialisé",
+      "address": {
+        "street": "28 Rue de l'Orthodontie",
+        "postalCode": "69003",
+        "city": "Lyon",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 4 78 95 12 34",
+        "fax": "+33 4 78 95 12 35",
+        "email": "contact@orthodontiecenter.com",
+        "website": "https://www.orthodontie-avancee.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Pierre Dubois",
+        "phone": "+33 4 78 95 12 36"
+      },
+      "users": [
+        {
+          "username": "orthodontie",
+          "password": "456",
+          "email": "contact@orthodontiecenter.com",
+          "name": "Dr. Claire Orthodont",
+          "role": "Orthodontiste"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Esthétique Smile - Dentisterie Cosmétique",
+      "type": "Cabinet Esthétique",
+      "address": {
+        "street": "42 Boulevard de la Beauté",
+        "postalCode": "13001",
+        "city": "Marseille",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 4 91 15 67 89",
+        "fax": "+33 4 91 15 67 90",
+        "email": "info@esthetiquesmile.com",
+        "website": "https://www.esthetique-smile.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Amélie Sourire",
+        "phone": "+33 4 91 15 67 91"
+      },
+      "users": [
+        {
+          "username": "esthetique",
+          "password": "789",
+          "email": "info@esthetiquesmile.com",
+          "name": "Dr. Amélie Sourire",
+          "role": "Dentiste Esthétique"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Cabinet de Dentisterie Pédiatrique",
+      "type": "Cabinet Pédiatrique",
+      "address": {
+        "street": "7 Rue des Petits Sourires",
+        "postalCode": "31000",
+        "city": "Toulouse",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 5 61 23 45 67",
+        "fax": "+33 5 61 23 45 68",
+        "email": "contact@pediatrie-dentaire.com",
+        "website": "https://www.pediatrie-dentaire.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Sophie Enfant",
+        "phone": "+33 5 61 23 45 69"
+      },
+      "users": [
+        {
+          "username": "pediatrie",
+          "password": "abc123",
+          "email": "contact@pediatrie-dentaire.com",
+          "name": "Dr. Sophie Enfant",
+          "role": "Pédodontiste"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Centre d'Implantologie Avancée",
+      "type": "Centre Spécialisé",
+      "address": {
+        "street": "33 Avenue de l'Implant",
+        "postalCode": "06000",
+        "city": "Nice",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 4 93 87 65 43",
+        "fax": "+33 4 93 87 65 44",
+        "email": "dr.martin@implant-center.fr",
+        "website": "https://www.implant-center-nice.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Jean-Luc Martin",
+        "phone": "+33 4 93 87 65 45"
+      },
+      "users": [
+        {
+          "username": "implantologie",
+          "password": "implant456",
+          "email": "dr.martin@implant-center.fr",
+          "name": "Dr. Jean-Luc Martin",
+          "role": "Implantologue"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Service d'Urgence Dentaire 24h/24",
+      "type": "Service d'Urgence",
+      "address": {
+        "street": "1 Place de l'Urgence",
+        "postalCode": "67000",
+        "city": "Strasbourg",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 3 88 14 25 36",
+        "fax": "+33 3 88 14 25 37",
+        "email": "urgence@dentaire24h.fr",
+        "website": "https://www.dentaire24h-strasbourg.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Paul Urgence",
+        "phone": "+33 3 88 14 25 38"
+      },
+      "users": [
+        {
+          "username": "urgence",
+          "password": "urgence24",
+          "email": "urgence@dentaire24h.fr",
+          "name": "Dr. Paul Urgence",
+          "role": "Dentiste de garde"
+        }
+      ]
+    }
+  ]
+}

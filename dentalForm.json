@@ -8,8 +8,8 @@
     {
       "id": "q1",
       "type": "multiple-choice",
-      "title": "questions.dental.pain",
-      "description": "questions.dental.pain_description",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
       "required": true,
       "options": [
         { "key": "options.pain.severe" },
@@ -27,8 +27,8 @@
     {
       "id": "q3",
       "type": "checkbox",
-      "title": "questions.dental.allergies",
-      "description": "questions.dental.allergies_description",
+      "titleKey": "questions.dental.allergies",
+      "descriptionKey": "questions.dental.allergies_description",
       "required": true,
       "options": [
         { "key": "options.allergies.penicillin" },
@@ -41,7 +41,7 @@
     {
       "id": "q4",
       "type": "multiple-choice",
-      "title": "questions.dental.medications",
+      "titleKey": "questions.dental.medications",
       "required": true,
       "options": [
         { "key": "options.medications.prescription" },

@@ -125,6 +125,27 @@
         "name": "Dr. Paul Urgence",
         "phone": "+33 3 88 14 25 38"
       }
+    },
+    {
+      "id": "7",
+      "name": "Cabinet Dentaire Dr. Walid",
+      "type": "Cabinet Dentaire",
+      "address": {
+        "street": "45 Rue de la Santé",
+        "postalCode": "33000",
+        "city": "Bordeaux",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 5 56 48 72 91",
+        "fax": "+33 5 56 48 72 92",
+        "email": "walid@gmail.com",
+        "website": "https://www.cabinet-walid.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Walid",
+        "phone": "+33 6 12 34 56 78"
+      }
     }
   ]
 }

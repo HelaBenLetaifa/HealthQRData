@@ -146,6 +146,27 @@
         "name": "Dr. Walid",
         "phone": "+33 6 12 34 56 78"
       }
+    },
+     {
+      "id": "9",
+      "name": "Cabinet Dentaire Dr. Sophie",
+      "type": "Cabinet Dentaire",
+      "address": {
+        "street": "45 Rue de la Santé",
+        "postalCode": "33000",
+        "city": "Bordeaux",
+        "country": "France"
+      },
+      "contact": {
+        "phone": "+33 5 56 48 72 91",
+        "fax": "+33 5 56 48 72 92",
+        "email": "Sophie@gmail.com",
+        "website": "https://www.cabinet-Sophie.fr"
+      },
+      "emergencyContact": {
+        "name": "Dr. Sophie",
+        "phone": "+33 6 12 34 56 78"
+      }
     }
   ]
 }

@@ -51,6 +51,26 @@
     },
     {
       "id": "q5",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.dental.health_problems",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.dental.health_problems_primary"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.dental.health_problems_specify",
+        "options": [
+          { "key": "options.health.infarctus" },
+          { "key": "options.health.stroke" },
+          { "key": "options.health.cancer" },
+          { "key": "options.health.other", "allowText": true }
+        ]
+      }
+    },
+    {
+      "id": "q6",
       "type": "textarea",
       "titleKey": "questions.dental.concerns",
       "descriptionKey": "questions.dental.concerns_description",

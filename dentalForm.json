@@ -1,8 +1,8 @@
 {
-  "id": "dental-form-1",
+  "id": "dental-form-2",
   "translationKey": "forms.dental.title",
   "descriptionKey": "forms.dental.description",
-  "version": "1.0",
+  "version": "2.0",
   "isDefault": true,
   "questions": [
     {

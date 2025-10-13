@@ -99,7 +99,7 @@
     },
     {
       "id": "q7",
-      "type": "checkbox",
+      "type": "multiple-choice",
       "titleKey": "questions.medical.nursing",
       "required": true,
        "options": [

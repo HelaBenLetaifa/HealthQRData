@@ -97,16 +97,12 @@
         "promptKey": "questions.medical.pregnant_since"
       }
     },
-    {
-      "id": "q7",
-      "type": "multiple-choice",
-      "titleKey": "questions.medical.nursing",
-      "required": true,
-       "options": [
-        { "key": "option.medical.yes" },
-        { "key": "option.medical.non" }
-       ]
-    },
+   {
+  "id": "q7",
+  "type": "yes-no",
+  "titleKey": "questions.medical.nursing",
+  "required": true
+},
     {
       "id": "q8",
       "type": "textarea",

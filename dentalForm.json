@@ -101,7 +101,11 @@
       "id": "q7",
       "type": "yes-no",
       "titleKey": "questions.medical.nursing",
-      "required": true
+      "required": true,
+       "options": [
+        { "key": "option.medical.yes" },
+        { "key": "option.medical.non":"non" }
+       ]
     },
     {
       "id": "q8",

@@ -104,7 +104,7 @@
       "required": true,
        "options": [
         { "key": "option.medical.yes" },
-        { "key": "option.medical.non":"non" }
+        { "key": "option.medical.non" }
        ]
     },
     {

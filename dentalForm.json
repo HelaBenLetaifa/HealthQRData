@@ -2,8 +2,7 @@
   "id": "dental-form-1",
   "translationKey": "forms.dental.title",
   "descriptionKey": "forms.dental.description",
-  "version": "06",
-  "reference": "ENR-ACC-001",
+  "version": "1.0",
   "isDefault": true,
   "questions": [
     {

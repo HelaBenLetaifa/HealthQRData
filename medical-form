@@ -1,114 +1,79 @@
 {
-  "id": "medical-form-1",
-  "translationKey": "forms.medical.title",
-  "descriptionKey": "forms.medical.description",
-  "version": "06",
-  "reference": "ENR-ACC-001",
+  "id": "dental-form-1",
+  "translationKey": "forms.dental.title",
+  "descriptionKey": "forms.dental.description",
+  "version": "1.0",
   "isDefault": true,
   "questions": [
     {
       "id": "q1",
-      "type": "conditional-checkbox",
-      "titleKey": "questions.medical.disease",
-      "descriptionKey": "questions.medical.disease_description",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
       "required": true,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.have_disease"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.specify_disease",
-        "options": [
-          { "key": "options.disease.cardiac", "allowText": true },
-          { "key": "options.disease.neurologic", "allowText": true },
-          { "key": "options.disease.renal", "allowText": true },
-          { "key": "options.disease.digestive", "allowText": true },
-          { "key": "options.disease.endocrinologic", "allowText": true, "subtext": "diabète, thyroïde..." },
-          { "key": "options.disease.hematologic" },
-          { "key": "options.disease.immunodeficit" },
-          { "key": "options.disease.infectious", "subtext": "hépatite" },
-          { "key": "options.disease.other", "allowText": true }
-        ]
-      }
+      "options": [
+        { "key": "options.pain.severe" },
+        { "key": "options.pain.moderate" },
+        { "key": "options.pain.mild" },
+        { "key": "options.pain.none" }
+      ]
     },
     {
       "id": "q2",
-      "type": "conditional-text",
-      "titleKey": "questions.medical.allergies",
-      "required": true,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.allergic"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.specify_allergies"
-      }
+      "type": "text",
+      "titleKey": "questions.dental.last_visit",
+      "required": true
     },
     {
       "id": "q3",
-      "type": "conditional-text",
-      "titleKey": "questions.medical.medication",
+      "type": "checkbox",
+      "titleKey": "questions.dental.allergies",
+      "descriptionKey": "questions.dental.allergies_description",
       "required": true,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.take_medication"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.specify_medication"
-      }
+      "options": [
+        { "key": "options.allergies.penicillin" },
+        { "key": "options.allergies.lidocaine" },
+        { "key": "options.allergies.latex" },
+        { "key": "options.allergies.other" },
+        { "key": "options.allergies.none" }
+      ]
     },
     {
       "id": "q4",
-      "type": "checkbox",
-      "titleKey": "questions.medical.specific_medications",
-      "required": false,
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.medications",
+      "required": true,
       "options": [
-        { "key": "options.medication.bisphosphonates" },
-        { "key": "options.medication.anticoagulants", "allowText": true }
+        { "key": "options.medications.prescription" },
+        { "key": "options.medications.over_counter" },
+        { "key": "options.medications.none" }
       ]
     },
     {
       "id": "q5",
-      "type": "conditional-text",
-      "titleKey": "questions.medical.smoking",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.dental.health_problems",
       "required": true,
       "primaryQuestion": {
         "type": "yes-no",
-        "titleKey": "questions.medical.smoker"
+        "titleKey": "questions.dental.health_problems_primary"
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.cigarettes_per_day"
+        "promptKey": "questions.dental.health_problems_specify",
+        "options": [
+          { "key": "options.health.infarctus" },
+          { "key": "options.health.stroke" },
+          { "key": "options.health.cancer" },
+          { "key": "options.health.other", "allowText": true }
+        ]
       }
     },
     {
       "id": "q6",
-      "type": "conditional-text",
-      "titleKey": "questions.medical.pregnant",
-      "required": true,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.are_pregnant"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.pregnant_since"
-      }
-    },
-    {
-      "id": "q7",
-      "type": "yes-no",
-      "titleKey": "questions.medical.nursing",
-      "required": true
-    },
-    {
-      "id": "q8",
       "type": "textarea",
-      "titleKey": "questions.medical.additional_info",
-      "descriptionKey": "questions.medical.additional_info_description",
+      "titleKey": "questions.dental.concerns",
+      "descriptionKey": "questions.dental.concerns_description",
       "required": false
     }
   ]

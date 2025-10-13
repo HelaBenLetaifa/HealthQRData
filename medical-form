@@ -1,0 +1,115 @@
+{
+  "id": "medical-form-1",
+  "translationKey": "forms.medical.title",
+  "descriptionKey": "forms.medical.description",
+  "version": "06",
+  "reference": "ENR-ACC-001",
+  "isDefault": true,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.medical.disease",
+      "descriptionKey": "questions.medical.disease_description",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.have_disease"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_disease",
+        "options": [
+          { "key": "options.disease.cardiac", "allowText": true },
+          { "key": "options.disease.neurologic", "allowText": true },
+          { "key": "options.disease.renal", "allowText": true },
+          { "key": "options.disease.digestive", "allowText": true },
+          { "key": "options.disease.endocrinologic", "allowText": true, "subtext": "diabète, thyroïde..." },
+          { "key": "options.disease.hematologic" },
+          { "key": "options.disease.immunodeficit" },
+          { "key": "options.disease.infectious", "subtext": "hépatite" },
+          { "key": "options.disease.other", "allowText": true }
+        ]
+      }
+    },
+    {
+      "id": "q2",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.allergies",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.allergic"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_allergies"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.medication",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.take_medication"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_medication"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "checkbox",
+      "titleKey": "questions.medical.specific_medications",
+      "required": false,
+      "options": [
+        { "key": "options.medication.bisphosphonates" },
+        { "key": "options.medication.anticoagulants", "allowText": true }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.smoking",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.smoker"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.cigarettes_per_day"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.pregnant",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.are_pregnant"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.pregnant_since"
+      }
+    },
+    {
+      "id": "q7",
+      "type": "yes-no",
+      "titleKey": "questions.medical.nursing",
+      "required": true
+    },
+    {
+      "id": "q8",
+      "type": "textarea",
+      "titleKey": "questions.medical.additional_info",
+      "descriptionKey": "questions.medical.additional_info_description",
+      "required": false
+    }
+  ]
+}

@@ -24,16 +24,16 @@
           { "key": "options.disease.renal", "allowText": true },
           { "key": "options.disease.digestive", "allowText": true },
           { "key": "options.disease.endocrinologic", "allowText": true, "subtext": "diabète, thyroïde..." },
-          { "key": "options.disease.hematologic", "allowText": true },
-          { "key": "options.disease.immunodeficit", "allowText": true },
-          { "key": "options.disease.infectious", "allowText": true, "subtext": "hépatite" },
+          { "key": "options.disease.hematologic" },
+          { "key": "options.disease.immunodeficit" },
+          { "key": "options.disease.infectious", "subtext": "hépatite" },
           { "key": "options.disease.other", "allowText": true }
         ]
       }
     },
     {
       "id": "q2",
-      "type": "conditional-checkbox",
+      "type": "conditional-text",
       "titleKey": "questions.medical.allergies",
       "required": true,
       "primaryQuestion": {
@@ -42,14 +42,7 @@
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.specify_allergies",
-        "options": [
-          { "key": "options.allergy.penicillin" },
-          { "key": "options.allergy.latex" },
-          { "key": "options.allergy.iodine" },
-          { "key": "options.allergy.anesthetics" },
-          { "key": "options.allergy.other", "allowText": true }
-        ]
+        "promptKey": "questions.medical.specify_allergies"
       }
     },
     {
@@ -104,30 +97,36 @@
         "promptKey": "questions.medical.pregnant_since"
       }
     },
-    {
-      "id": "q7",
-      "type": "multiple-choice",
+   {
+  "id": "q7",
+  "type": "multiple-choice",
       "titleKey": "questions.medical.nursing",
       "required": true,
-      "options": [
+       "options": [
         { "key": "option.medical.yes" },
-        { "key": "option.medical.no" }
-      ]
-    },
+        { "key": "option.medical.non" }
+       ]
+},
     {
       "id": "q8",
-      "type": "conditional-text",
+      "type": "textarea",
       "titleKey": "questions.medical.additional_info",
       "descriptionKey": "questions.medical.additional_info_description",
-      "required": false,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.additional_info_question"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.additional_info_detail"
-      }
+      "required": false
+    },
+      {
+      "id": "q9",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
+      "required": true,
+      "options": [
+        { "key": "options.pain.severe" },
+        { "key": "options.pain.moderate" },
+        { "key": "options.pain.mild" },
+        { "key": "options.pain.none" },
+       { "key": "options.disease.other", "allowText": true }
+      ]
     }
   ]
 }

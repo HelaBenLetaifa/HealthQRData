@@ -85,47 +85,47 @@
     },
     {
       "id": "q6",
-      "type": "conditional-checkbox",
-      "titleKey": "questions.medical.pregnancy_nursing",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.pregnant",
       "required": true,
       "primaryQuestion": {
-        "type": "multiple-choice",
-        "titleKey": "questions.medical.are_pregnant",
-        "options": [
-          { "key": "options.pregnancy.yes" },
-          { "key": "options.pregnancy.no" },
-          { "key": "options.pregnancy.not_applicable" }
-        ]
+        "type": "yes-no",
+        "titleKey": "questions.medical.are_pregnant"
       },
       "conditionalOptions": {
         "showWhen": "yes",
         "promptKey": "questions.medical.pregnant_since"
-      },
-      "secondaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.nursing",
-        "showWhen": "no"
       }
     },
+   {
+  "id": "q7",
+  "type": "multiple-choice",
+      "titleKey": "questions.medical.nursing",
+      "required": true,
+       "options": [
+        { "key": "option.medical.yes" },
+        { "key": "option.medical.non" }
+       ]
+},
     {
-      "id": "q7",
+      "id": "q8",
       "type": "textarea",
       "titleKey": "questions.medical.additional_info",
       "descriptionKey": "questions.medical.additional_info_description",
       "required": false
     },
-    {
+      {
       "id": "q9",
-      "type": "checkbox",
-      "titleKey": "questions.dental.allergies",
-      "descriptionKey": "questions.dental.allergies_description",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
       "required": true,
       "options": [
-        { "key": "options.allergies.penicillin" },
-        { "key": "options.allergies.lidocaine" },
-        { "key": "options.allergies.latex" },
-        { "key": "options.allergies.none" },
-        { "key": "options.allergies.other" }
+        { "key": "options.pain.severe" },
+        { "key": "options.pain.moderate" },
+        { "key": "options.pain.mild" },
+        { "key": "options.pain.none" },
+       { "key": "options.disease.other", "allowText": true }
       ]
     }
   ]

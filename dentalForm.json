@@ -115,17 +115,17 @@
       "required": false
     },
     {
-      "id": "q8",
-      "type": "multiple-choice",
-      "titleKey": "questions.dental.pain",
-      "descriptionKey": "questions.dental.pain_description",
+      "id": "q9",
+      "type": "checkbox",
+      "titleKey": "questions.dental.allergies",
+      "descriptionKey": "questions.dental.allergies_description",
       "required": true,
       "options": [
-        { "key": "options.pain.severe" },
-        { "key": "options.pain.moderate" },
-        { "key": "options.pain.mild" },
-        { "key": "options.pain.none" },
-        { "key": "options.disease.other", "allowText": true }
+        { "key": "options.allergies.penicillin" },
+        { "key": "options.allergies.lidocaine" },
+        { "key": "options.allergies.latex" },
+        { "key": "options.allergies.none" },
+        { "key": "options.allergies.other" }
       ]
     }
   ]

@@ -104,7 +104,8 @@
       "required": true,
        "options": [
         { "key": "option.medical.yes" },
-        { "key": "option.medical.non" }
+        { "key": "option.medical.non" },
+        { "key": "options.pregnancy.not_applicable" }
        ]
 },
     {

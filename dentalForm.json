@@ -113,6 +113,20 @@
       "titleKey": "questions.medical.additional_info",
       "descriptionKey": "questions.medical.additional_info_description",
       "required": false
+    },
+      {
+      "id": "q9",
+      "type": "multiple-choice",
+      "titleKey": "questions.dental.pain",
+      "descriptionKey": "questions.dental.pain_description",
+      "required": true,
+      "options": [
+        { "key": "options.pain.severe" },
+        { "key": "options.pain.moderate" },
+        { "key": "options.pain.mild" },
+        { "key": "options.pain.none" },
+       { "key": "options.disease.other", "allowText": true }
+      ]
     }
   ]
 }

@@ -23,17 +23,17 @@
           { "key": "options.disease.neurologic", "allowText": true },
           { "key": "options.disease.renal", "allowText": true },
           { "key": "options.disease.digestive", "allowText": true },
-          { "key": "options.disease.endocrinologic", "allowText": true, "subtext": "diabète, thyroïde..." },
-          { "key": "options.disease.hematologic" },
-          { "key": "options.disease.immunodeficit" },
-          { "key": "options.disease.infectious", "subtext": "hépatite" },
+          { "key": "options.disease.endocrinologic", "allowText": true },
+          { "key": "options.disease.hematologic", "allowText": true },
+          { "key": "options.disease.immunodeficit", "allowText": true },
+          { "key": "options.disease.infectious", "allowText": true },
           { "key": "options.disease.other", "allowText": true }
         ]
       }
     },
     {
       "id": "q2",
-      "type": "conditional-text",
+      "type": "conditional-checkbox",
       "titleKey": "questions.medical.allergies",
       "required": true,
       "primaryQuestion": {
@@ -42,7 +42,14 @@
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.specify_allergies"
+        "promptKey": "questions.medical.specify_allergies",
+        "options": [
+          { "key": "options.allergies.penicillin" },
+          { "key": "options.allergies.latex" },
+          { "key": "options.allergies.iodine" },
+          { "key": "options.allergies.anesthetics" },
+          { "key": "options.allergies.other", "allowText": true }
+        ]
       }
     },
     {
@@ -56,18 +63,27 @@
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.specify_medication"
+        "promptKey": "questions.medical.specify_medication",
+        "multiline": true
       }
     },
     {
       "id": "q4",
-      "type": "checkbox",
+      "type": "conditional-checkbox",
       "titleKey": "questions.medical.specific_medications",
       "required": false,
-      "options": [
-        { "key": "options.medication.bisphosphonates" },
-        { "key": "options.medication.anticoagulants", "allowText": true }
-      ]
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.take_specific_medication"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_which",
+        "options": [
+          { "key": "options.medication.bisphosphonates" },
+          { "key": "options.medication.anticoagulants", "allowText": true }
+        ]
+      }
     },
     {
       "id": "q5",
@@ -80,64 +96,42 @@
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.cigarettes_per_day"
+        "promptKey": "questions.medical.cigarettes_per_day",
+        "placeholder": "Nombre de cigarettes par jour"
       }
     },
     {
       "id": "q6",
-      "type": "conditional-text",
-      "titleKey": "questions.medical.pregnant",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.medical.pregnancy_nursing",
       "required": true,
       "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.are_pregnant"
+        "type": "multiple-choice",
+        "titleKey": "questions.medical.are_pregnant",
+        "options": [
+          { "key": "options.pregnancy.yes" },
+          { "key": "options.pregnancy.no" },
+          { "key": "options.pregnancy.not_applicable" }
+        ]
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.pregnant_since"
+        "promptKey": "questions.medical.pregnant_since",
+        "multiline": false,
+        "placeholder": "Précisez depuis combien de temps"
+      },
+      "secondaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.nursing",
+        "showWhen": "no"
       }
     },
-   {
-  "id": "q7",
-  "type": "multiple-choice",
-      "titleKey": "questions.medical.nursing",
-      "required": true,
-       "options": [
-        { "key": "option.medical.yes" },
-        { "key": "option.medical.non" },
-        { "key": "options.pregnancy.not_applicable" }
-       ]
-},
-    {
-      "id": "q8",
+     {
+      "id": "q7",
       "type": "textarea",
       "titleKey": "questions.medical.additional_info",
       "descriptionKey": "questions.medical.additional_info_description",
       "required": false
-    },
-      {
-  "id": "q9",
-  "type": "conditional-checkbox",
-  "titleKey": "questions.medical.pregnancy_breastfeeding",
-  "descriptionKey": "questions.medical.pregnancy_breastfeeding_description",
-  "required": false,
-  "primaryQuestion": {
-    "type": "yes-no",
-    "titleKey": "questions.medical.pregnancy_or_breastfeeding_question"
-  },
-  "conditionalOptions": {
-    "showWhen": "yes",
-    "promptKey": "questions.medical.specify_situation",
-    "options": [
-      { 
-        "key": "options.pregnancy.currently_pregnant",
-        "allowText": true
-      },
-      { 
-        "key": "options.pregnancy.currently_breastfeeding"
-      }
-    ]
-  }
-}
+    }
   ]
 }

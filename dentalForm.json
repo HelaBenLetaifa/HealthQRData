@@ -121,6 +121,34 @@
       "titleKey": "questions.dental.concerns",
       "descriptionKey": "questions.dental.concerns_description",
       "required": false
-    }
+    },
+    {
+  "id": "q8",
+  "type": "conditional-checkbox",
+  "titleKey": "questions.clinic.discovery",
+  "required": false,
+  "primaryQuestion": {
+    "type": "yes-no",
+    "titleKey": "questions.clinic.how_discover"
+  },
+  "conditionalOptions": {
+    "showWhen": "yes",
+    "promptKey": "questions.clinic.specify_discovery",
+    "options": [
+      { 
+        "key": "options.discovery.dentist",
+        "allowText": true
+      },
+      { 
+        "key": "options.discovery.website",
+        "allowText": true
+      },
+      { 
+        "key": "options.discovery.other",
+        "allowText": true
+      }
+    ]
+  }
+}
   ]
 }

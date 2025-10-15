@@ -126,12 +126,22 @@
         "showWhen": "no"
       }
     },
-     {
+    {
       "id": "q7",
-      "type": "textarea",
+      "type": "conditional-text",
       "titleKey": "questions.medical.additional_info",
       "descriptionKey": "questions.medical.additional_info_description",
-      "required": false
+      "required": false,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.have_additional_info"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_additional_info",
+        "multiline": true,
+        "placeholder": "Précisez les informations supplémentaires"
+      }
     }
   ]
 }

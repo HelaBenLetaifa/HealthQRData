@@ -116,18 +116,28 @@
       "required": false
     },
       {
-      "id": "q9",
-      "type": "multiple-choice",
-      "titleKey": "questions.dental.pain",
-      "descriptionKey": "questions.dental.pain_description",
-      "required": true,
-      "options": [
-        { "key": "options.pain.severe" },
-        { "key": "options.pain.moderate" },
-        { "key": "options.pain.mild" },
-        { "key": "options.pain.none" },
-       { "key": "options.disease.other", "allowText": true }
-      ]
-    }
+  "id": "q6",
+  "type": "conditional-checkbox",
+  "titleKey": "questions.medical.pregnancy_breastfeeding",
+  "descriptionKey": "questions.medical.pregnancy_breastfeeding_description",
+  "required": false,
+  "primaryQuestion": {
+    "type": "yes-no",
+    "titleKey": "questions.medical.pregnancy_or_breastfeeding_question"
+  },
+  "conditionalOptions": {
+    "showWhen": "yes",
+    "promptKey": "questions.medical.specify_situation",
+    "options": [
+      { 
+        "key": "options.pregnancy.currently_pregnant",
+        "allowText": true
+      },
+      { 
+        "key": "options.pregnancy.currently_breastfeeding"
+      }
+    ]
+  }
+}
   ]
 }

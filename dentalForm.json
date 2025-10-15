@@ -116,7 +116,7 @@
       "required": false
     },
       {
-  "id": "q6",
+  "id": "q9",
   "type": "conditional-checkbox",
   "titleKey": "questions.medical.pregnancy_breastfeeding",
   "descriptionKey": "questions.medical.pregnancy_breastfeeding_description",

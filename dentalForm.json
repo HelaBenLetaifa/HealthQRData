@@ -92,7 +92,7 @@
         "placeholder": "Nombre de cigarettes par jour"
       }
     },
-    {
+{
   "id": "q6",
   "type": "conditional-checkbox",
   "titleKey": "questions.medical.pregnancy_nursing",
@@ -107,7 +107,8 @@
     "options": [
       { 
         "key": "options.pregnancy.currently_pregnant",
-        "allowText": true
+        "allowText": true,
+        "textPromptKey": "questions.medical.pregnant_since"
       },
       { 
         "key": "options.pregnancy.currently_breastfeeding"

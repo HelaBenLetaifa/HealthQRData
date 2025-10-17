@@ -116,12 +116,20 @@
   }
 },
     {
-      "id": "q7",
-      "type": "textarea",
-      "titleKey": "questions.dental.concerns",
-      "descriptionKey": "questions.dental.concerns_description",
-      "required": false
-    },
+  "id": "q7",
+  "type": "conditional-text",
+  "titleKey": "questions.dental.concerns",
+  "required": false,
+  "primaryQuestion": {
+    "type": "yes-no",
+    "titleKey": "questions.dental.concerns"
+  },
+  "conditionalOptions": {
+    "showWhen": "yes",
+    "promptKey": "questions.dental.concerns_description",
+    "multiline": true
+  }
+},
     {
   "id": "q8",
   "type": "conditional-checkbox",

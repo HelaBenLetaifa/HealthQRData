@@ -8,8 +8,26 @@
     {
       "id": "q1",
       "type": "conditional-checkbox",
+      "titleKey": "questions.clinic.discovery",
+      "required": false,
+      "primaryQuestion": {
+        "type": "text",
+        "titleKey": "questions.clinic.how_discover"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.clinic.specify_discovery",
+        "options": [
+          { "key": "options.discovery.dentist", "allowText": true },
+          { "key": "options.discovery.website", "allowText": true },
+          { "key": "options.discovery.other", "allowText": true }
+        ]
+      }
+    },
+    {
+      "id": "q2",
+      "type": "conditional-checkbox",
       "titleKey": "questions.medical.disease",
-      "descriptionKey": "questions.medical.disease_description",
       "required": true,
       "primaryQuestion": {
         "type": "yes-no",
@@ -23,22 +41,22 @@
           { "key": "options.disease.neurologic", "allowText": true },
           { "key": "options.disease.renal", "allowText": true },
           { "key": "options.disease.digestive", "allowText": true },
-          { "key": "options.disease.endocrinologic", "allowText": true },
+          { "key": "options.disease.endocrine", "allowText": true, "subtext": "diabète, thyroïde..." },
           { "key": "options.disease.hematologic", "allowText": true },
-          { "key": "options.disease.immunodeficit", "allowText": true },
-          { "key": "options.disease.infectious", "allowText": true },
+          { "key": "options.disease.immunodeficiency", "allowText": true },
+          { "key": "options.disease.infectious", "allowText": true, "subtext": "hépatite, etc." },
           { "key": "options.disease.other", "allowText": true }
         ]
       }
     },
     {
-      "id": "q2",
+      "id": "q3",
       "type": "conditional-checkbox",
       "titleKey": "questions.medical.allergies",
       "required": true,
       "primaryQuestion": {
         "type": "yes-no",
-        "titleKey": "questions.medical.allergic"
+        "titleKey": "questions.medical.have_allergies"
       },
       "conditionalOptions": {
         "showWhen": "yes",
@@ -53,13 +71,13 @@
       }
     },
     {
-      "id": "q3",
+      "id": "q4",
       "type": "conditional-checkbox",
-      "titleKey": "questions.medical.medication",
-      "required": false,
+      "titleKey": "questions.medical.treatment",
+      "required": true,
       "primaryQuestion": {
         "type": "yes-no",
-        "titleKey": "questions.medical.medication"
+        "titleKey": "questions.medical.take_medication"
       },
       "conditionalOptions": {
         "showWhen": "yes",
@@ -71,7 +89,7 @@
       }
     },
     {
-      "id": "q4",
+      "id": "q5",
       "type": "conditional-text",
       "titleKey": "questions.medical.smoking",
       "required": true,
@@ -86,70 +104,55 @@
       }
     },
     {
-      "id": "q5",
-      "type": "conditional-checkbox",
+      "id": "q6",
+      "type": "conditional-group",
       "titleKey": "questions.medical.pregnancy_nursing",
       "required": true,
       "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.pregnancy_or_breastfeeding_question"
+        "type": "single-choice",
+        "titleKey": "questions.medical.are_pregnant",
+        "options": [
+          { "key": "options.pregnancy.yes", "value": "yes", "label": "OUI" },
+          { "key": "options.pregnancy.no", "value": "no", "label": "NON" },
+          { "key": "options.pregnancy.not_applicable", "value": "not_applicable", "label": "PAS CONCERNÉ" }
+        ]
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.specify_situation",
-        "options": [
-          { 
-            "key": "options.pregnancy.currently_pregnant",
-            "allowText": true,
-            "textPromptKey": "questions.medical.pregnant_since"
+        "questions": [
+          {
+            "id": "q6a",
+            "type": "text",
+            "titleKey": "questions.medical.pregnant_since",
+            "required": true,
+            "placeholder": "questions.medical.pregnant_since_placeholder"
           },
-          { 
-            "key": "options.pregnancy.currently_breastfeeding"
+          {
+            "id": "q6b",
+            "type": "single-choice",
+            "titleKey": "questions.medical.nursing",
+            "required": true,
+            "options": [
+              { "key": "options.yes", "value": "yes", "label": "OUI" },
+              { "key": "options.no", "value": "no", "label": "NON" }
+            ]
           }
         ]
-      }
-    },
-    {
-      "id": "q6",
-      "type": "conditional-text",
-      "titleKey": "questions.dental.concerns",
-      "required": false,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.dental.concerns"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.dental.concerns_description",
-        "multiline": true
       }
     },
     {
       "id": "q7",
-      "type": "conditional-checkbox",
-      "titleKey": "questions.clinic.discovery",
+      "type": "conditional-text",
+      "titleKey": "questions.medical.additional_info",
       "required": false,
       "primaryQuestion": {
         "type": "yes-no",
-        "titleKey": "questions.clinic.how_discover"
+        "titleKey": "questions.medical.other_info"
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.clinic.specify_discovery",
-        "options": [
-          { 
-            "key": "options.discovery.dentist",
-            "allowText": true
-          },
-          { 
-            "key": "options.discovery.website",
-            "allowText": true
-          },
-          { 
-            "key": "options.discovery.other",
-            "allowText": true
-          }
-        ]
+        "promptKey": "questions.medical.specify_other_info",
+        "multiline": true
       }
     }
   ]

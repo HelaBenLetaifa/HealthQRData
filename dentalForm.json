@@ -49,19 +49,26 @@
         ]
       }
     },
-    {
+   {
       "id": "q3",
-      "type": "checkbox",
+      "type": "conditional-checkbox",
       "titleKey": "questions.medical.allergies",
       "required": true,
-      "options": [
-        { "key": "options.allergies.penicillin" },
-        { "key": "options.allergies.latex" },
-        { "key": "options.allergies.iodine" },
-        { "key": "options.allergies.anesthetics" },
-        { "key": "options.allergies.other", "allowText": true },
-        { "key": "options.allergies.none" }
-      ]
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.allergic"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_allergies",
+        "options": [
+          { "key": "options.allergies.penicillin" },
+          { "key": "options.allergies.latex" },
+          { "key": "options.allergies.iodine" },
+          { "key": "options.allergies.anesthetics" },
+          { "key": "options.allergies.other", "allowText": true }
+        ]
+      }
     },
     {
       "id": "q4",

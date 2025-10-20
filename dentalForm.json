@@ -41,10 +41,10 @@
           { "key": "options.disease.neurologic", "allowText": true },
           { "key": "options.disease.renal", "allowText": true },
           { "key": "options.disease.digestive", "allowText": true },
-          { "key": "options.disease.endocrine", "allowText": true, "subtext": "diabète, thyroïde..." },
+          { "key": "options.disease.endocrine", "allowText": true  },
           { "key": "options.disease.hematologic", "allowText": true },
           { "key": "options.disease.immunodeficiency", "allowText": true },
-          { "key": "options.disease.infectious", "allowText": true, "subtext": "hépatite, etc." },
+          { "key": "options.disease.infectious", "allowText": true },
           { "key": "options.disease.other", "allowText": true }
         ]
       }

@@ -140,19 +140,21 @@
     ]
   }
 },
-    {
+        {
       "id": "q7",
       "type": "conditional-text",
       "titleKey": "questions.medical.additional_info",
+      "descriptionKey": "questions.medical.additional_info_description",
       "required": false,
       "primaryQuestion": {
         "type": "yes-no",
-        "titleKey": "questions.medical.other_info"
+        "titleKey": "questions.medical.have_additional_info"
       },
       "conditionalOptions": {
         "showWhen": "yes",
-        "promptKey": "questions.medical.specify_other_info",
-        "multiline": true
+        "promptKey": "questions.medical.specify_additional_info",
+        "multiline": true,
+        "placeholder": "Précisez les informations supplémentaires"
       }
     }
   ]

@@ -67,15 +67,23 @@
         "multiline": true
       }
     },
-      {
+    {
       "id": "q4",
-      "type": "checkbox",
+      "type": "conditional-checkbox",
       "titleKey": "questions.medical.specific_medications",
       "required": false,
-      "options": [
-        { "key": "options.medication.bisphosphonates" },
-        { "key": "options.medication.anticoagulants", "allowText": true }
-      ]
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.have_specific_medications"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_medications",
+        "options": [
+          { "key": "options.medication.bisphosphonates" },
+          { "key": "options.medication.anticoagulants", "allowText": true }
+        ]
+      }
     },
     {
       "id": "q5",
@@ -92,72 +100,72 @@
         "placeholder": "Nombre de cigarettes par jour"
       }
     },
-{
-  "id": "q6",
-  "type": "conditional-checkbox",
-  "titleKey": "questions.medical.pregnancy_nursing",
-  "required": true,
-  "primaryQuestion": {
-    "type": "yes-no",
-    "titleKey": "questions.medical.pregnancy_or_breastfeeding_question"
-  },
-  "conditionalOptions": {
-    "showWhen": "yes",
-    "promptKey": "questions.medical.specify_situation",
-    "options": [
-      { 
-        "key": "options.pregnancy.currently_pregnant",
-        "allowText": true,
-        "textPromptKey": "questions.medical.pregnant_since"
-      },
-      { 
-        "key": "options.pregnancy.currently_breastfeeding"
-      }
-    ]
-  }
-},
     {
-  "id": "q7",
-  "type": "conditional-text",
-  "titleKey": "questions.dental.concerns",
-  "required": false,
-  "primaryQuestion": {
-    "type": "yes-no",
-    "titleKey": "questions.dental.concerns"
-  },
-  "conditionalOptions": {
-    "showWhen": "yes",
-    "promptKey": "questions.dental.concerns_description",
-    "multiline": true
-  }
-},
-    {
-  "id": "q8",
-  "type": "conditional-checkbox",
-  "titleKey": "questions.clinic.discovery",
-  "required": false,
-  "primaryQuestion": {
-    "type": "yes-no",
-    "titleKey": "questions.clinic.how_discover"
-  },
-  "conditionalOptions": {
-    "showWhen": "yes",
-    "promptKey": "questions.clinic.specify_discovery",
-    "options": [
-      { 
-        "key": "options.discovery.dentist",
-        "allowText": true
+      "id": "q6",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.medical.pregnancy_nursing",
+      "required": true,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.pregnancy_or_breastfeeding_question"
       },
-      { 
-        "key": "options.discovery.website",
-        "allowText": true
-      },
-      { 
-        "key": "options.discovery.other",
-        "allowText": true
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_situation",
+        "options": [
+          { 
+            "key": "options.pregnancy.currently_pregnant",
+            "allowText": true,
+            "textPromptKey": "questions.medical.pregnant_since"
+          },
+          { 
+            "key": "options.pregnancy.currently_breastfeeding"
+          }
+        ]
       }
-    ]
-  }
-}
+    },
+    {
+      "id": "q7",
+      "type": "conditional-text",
+      "titleKey": "questions.dental.concerns",
+      "required": false,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.dental.concerns"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.dental.concerns_description",
+        "multiline": true
+      }
+    },
+    {
+      "id": "q8",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.clinic.discovery",
+      "required": false,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.clinic.how_discover"
+      },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.clinic.specify_discovery",
+        "options": [
+          { 
+            "key": "options.discovery.dentist",
+            "allowText": true
+          },
+          { 
+            "key": "options.discovery.website",
+            "allowText": true
+          },
+          { 
+            "key": "options.discovery.other",
+            "allowText": true
+          }
+        ]
+      }
+    }
   ]
 }

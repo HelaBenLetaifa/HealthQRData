@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "q4",
+      "id": "q3",
       "type": "conditional-checkbox",
       "titleKey": "questions.medical.medication",
       "required": false,
@@ -71,7 +71,7 @@
       }
     },
     {
-      "id": "q5",
+      "id": "q4",
       "type": "conditional-text",
       "titleKey": "questions.medical.smoking",
       "required": true,
@@ -86,7 +86,7 @@
       }
     },
     {
-      "id": "q6",
+      "id": "q5",
       "type": "conditional-checkbox",
       "titleKey": "questions.medical.pregnancy_nursing",
       "required": true,
@@ -110,7 +110,7 @@
       }
     },
     {
-      "id": "q7",
+      "id": "q6",
       "type": "conditional-text",
       "titleKey": "questions.dental.concerns",
       "required": false,
@@ -125,7 +125,7 @@
       }
     },
     {
-      "id": "q8",
+      "id": "q7",
       "type": "conditional-checkbox",
       "titleKey": "questions.clinic.discovery",
       "required": false,

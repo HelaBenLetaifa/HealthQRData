@@ -51,24 +51,17 @@
     },
     {
       "id": "q3",
-      "type": "conditional-checkbox",
+      "type": "checkbox",
       "titleKey": "questions.medical.allergies",
       "required": true,
-      "primaryQuestion": {
-        "type": "yes-no",
-        "titleKey": "questions.medical.have_allergies"
-      },
-      "conditionalOptions": {
-        "showWhen": "yes",
-        "promptKey": "questions.medical.specify_allergies",
-        "options": [
-          { "key": "options.allergies.penicillin" },
-          { "key": "options.allergies.latex" },
-          { "key": "options.allergies.iodine" },
-          { "key": "options.allergies.anesthetics" },
-          { "key": "options.allergies.other", "allowText": true }
-        ]
-      }
+      "options": [
+        { "key": "options.allergies.penicillin" },
+        { "key": "options.allergies.latex" },
+        { "key": "options.allergies.iodine" },
+        { "key": "options.allergies.anesthetics" },
+        { "key": "options.allergies.other", "allowText": true },
+        { "key": "options.allergies.none" }
+      ]
     },
     {
       "id": "q4",
@@ -106,7 +99,7 @@
     {
       "id": "q6",
       "type": "conditional-group",
-      "titleKey": "questions.medical.pregnancy_nursing",
+      "titleKey": "",
       "required": true,
       "primaryQuestion": {
         "type": "single-choice",

@@ -123,8 +123,8 @@
          "titleKey":"questions.medical.take_medication",
          "required":false,
          "primaryQuestion":{
-            "type":"yes-no"
-            "titleKey":"questions.medical.take_medication",
+            "type":"yes-no",
+            "titleKey":"questions.medical.take_medication"
          },
          "conditionalOptions":{
             "showWhen":"yes",

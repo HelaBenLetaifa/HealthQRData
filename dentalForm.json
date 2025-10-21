@@ -117,29 +117,24 @@
             ]
          }
       },
-      {
-         "id":"q4",
-         "type":"conditional-checkbox",
-         "titleKey":"questions.medical.take_medication",
-         "required":false,
-         "primaryQuestion":{
-            "type":"yes-no",
-            "titleKey":"questions.medical.take_medication"
-         },
-         "conditionalOptions":{
-            "showWhen":"yes",
-            "promptKey":"questions.medical.specify_medication",
-            "options":[
-               {
-                  "key":"options.medication.bisphosphonates"
-               },
-               {
-                  "key":"options.medication.anticoagulants",
-                  "allowText":true
-               }
-            ]
-         }
+       {
+      "id": "q4",
+      "type": "conditional-checkbox",
+      "titleKey": "questions.medical.specific_medications",
+      "required": false,
+      "primaryQuestion": {
+        "type": "yes-no",
+        "titleKey": "questions.medical.take_specific_medication"
       },
+      "conditionalOptions": {
+        "showWhen": "yes",
+        "promptKey": "questions.medical.specify_which",
+        "options": [
+          { "key": "options.medication.bisphosphonates" },
+          { "key": "options.medication.anticoagulants", "allowText": true }
+        ]
+      }
+    },
       {
          "id":"q5",
          "type":"conditional-text",

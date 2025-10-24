@@ -5,33 +5,29 @@
    "version":"1.0",
    "isDefault":true,
    "questions":[
+{
+  "id": "q1",
+  "type": "conditional-group",
+  "titleKey": "questions.clinic.discovery",
+  "required": false,
+  "primaryQuestion": {
+    "type": "checkbox",
+    "titleKey": "questions.clinic.how_discover",
+    "options": [
       {
-         "id":"q1",
-         "type":"conditional-checkbox",
-         "titleKey":"questions.clinic.discovery",
-         "required":false,
-         "primaryQuestion":{
-            "type":"text",
-            "titleKey":"questions.clinic.how_discover"
-         },
-         "conditionalOptions":{
-            "showWhen":"yes",
-            "promptKey":"questions.clinic.specify_discovery",
-            "options":[
-               {
-                  "key":"options.discovery.dentist",
-                  "allowText":true
-               },
-               {
-                  "key":"options.discovery.website",
-                  "allowText":true
-               },
-               {
-                  "key":"options.discovery.other",
-                  "allowText":true
-               }
-            ]
-         }
+        "key": "options.discovery.dentist",
+        "allowText": true
+      },
+      {
+        "key": "options.discovery.website", 
+        "allowText": true
+      },
+      {
+        "key": "options.discovery.other",
+        "allowText": true
+      }
+    ]
+  }
       },
       {
          "id":"q2",

@@ -1,0 +1,49 @@
+{
+  "badge": {
+    "icon": "✨",
+    "text": "À propos"
+  },
+  "title": {
+    "subtitle": "Découvrez",
+    "main": "QR Santé",
+    "accent": "."
+  },
+  "leadParagraph": "Une solution innovante qui permet aux patients de remplir leurs questionnaires médicaux directement depuis leur smartphone en scannant un QR code.",
+  "features": [
+    {
+      "icon": "🔒",
+      "title": "Sécurisée",
+      "text": "Interface sécurisée respectant les normes RGPD"
+    },
+    {
+      "icon": "⚡",
+      "title": "Performante",
+      "text": "Tableau de bord rapide et intuitif"
+    },
+    {
+      "icon": "😊",
+      "title": "Simple",
+      "text": "Améliore l'expérience patient en salle d'attente"
+    }
+  ],
+  "stats": [
+    {
+      "value": "-70%",
+      "label": "Temps d'attente"
+    },
+    {
+      "value": "100%",
+      "label": "Numérique"
+    },
+    {
+      "value": "+95%",
+      "label": "Satisfaction"
+    }
+  ],
+  "image": {
+    "src": "/about1.png",
+    "alt": "Interface QR Santé sur smartphone",
+    "width": 400,
+    "height": 600
+  }
+}

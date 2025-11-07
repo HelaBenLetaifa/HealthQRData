@@ -143,61 +143,85 @@
          }
       },
       {
-   "id":"q6",
-   "type":"conditional-group",
-   "titleKey":"",
-   "required":true,
-   "primaryQuestion":{
-      "type":"single-choice",
-      "titleKey":"questions.medical.are_pregnant",
-      "options":[
-         {
-            "key":"options.pregnancy.yes",
-            "value":"yes",
-            "label":"OUI"
-         },
-         {
-            "key":"options.pregnancy.no",
-            "value":"no",
-            "label":"NON"
-         },
-         {
-            "key":"options.pregnancy.not_applicable",
-            "value":"not_applicable",
-            "label":"PAS CONCERNÉ"
-         }
-      ]
-   },
-   "conditionalOptions":{
-      "showWhen":"yes",
-      "questions":[
-         {
-            "id":"q6a",
-            "type":"text",
-            "titleKey":"questions.medical.pregnant_since",
-            "required":true,
-            "placeholder":"questions.medical.pregnant_since_placeholder"
-         },
-         {
-            "id":"q6b",
-            "type":"single-choice",
-            "titleKey":"questions.medical.nursing",
-            "required":true,
-            "options":[
-               {
-                  "key":"common.yes",
-                  "value":"yes",
-                  "label":"OUI"
-               },
-               {
-                  "key":"common.no",
-                  "value":"no",
-                  "label":"NON"
-               }
-            ]
-         }
-      ]
-   },
+  "id": "q6",
+  "type": "conditional-group",
+  "titleKey": "",
+  "required": true,
+  "primaryQuestion": {
+    "type": "single-choice",
+    "titleKey": "questions.medical.are_pregnant",
+    "options": [
+      {
+        "key": "options.pregnancy.yes",
+        "value": "yes",
+        "label": "OUI"
+      },
+      {
+        "key": "options.pregnancy.no",
+        "value": "no",
+        "label": "NON"
+      },
+      {
+        "key": "options.pregnancy.not_applicable",
+        "value": "not_applicable",
+        "label": "PAS CONCERNÉ"
+      }
+    ]
+  },
+  "conditionalOptions": {
+    "showWhen": "yes",
+    "questions": [
+      {
+        "id": "q6a",
+        "type": "text",
+        "titleKey": "questions.medical.pregnant_since",
+        "required": true,
+        "placeholder": "questions.medical.pregnant_since_placeholder"
+      },
+      {
+        "id": "q6b",
+        "type": "single-choice",
+        "titleKey": "questions.medical.nursing",
+        "required": true,
+        "options": [
+          {
+            "key": "common.yes",
+            "value": "yes",
+            "label": "OUI"
+          },
+          {
+            "key": "common.no",
+            "value": "no",
+            "label": "NON"
+          }
+        ]
+      }
+    ]
+  },
+  "alternativeConditionalOptions": {
+    "showWhen": "no",
+    "questions": [
+      {
+        "id": "q6b",  
+        "type": "single-choice",
+        "titleKey": "questions.medical.nursing",
+        "required": true,
+        "options": [
+          {
+            "key": "common.yes",
+            "value": "yes",
+            "label": "OUI"
+          },
+          {
+            "key": "common.no",
+            "value": "no",
+            "label": "NON"
+          }
+        ]
+      }
+    ]
+  }
+},
    "alternativeConditionalOptions":{
       "showWhen":"no",
       "questions":[
